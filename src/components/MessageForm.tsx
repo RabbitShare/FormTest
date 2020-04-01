@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Formik, FormikActions, FormikProps } from 'formik';
-import { getUsers } from './services/getUsers';
-import { Users } from './types/Users';
+import { getUsers } from '../services/getUsers';
+import { Users } from '../types/Users';
 import { Message } from './Message';
 
 export interface Values {
@@ -11,12 +11,12 @@ export interface Values {
   agreement: boolean
 }
 
-interface BasicState {
+interface MessageFormState {
   users: Users[]
   loading: boolean
 }
 
-export class Basic extends React.Component<{}, BasicState> {
+export class MessageForm extends React.Component<{}, MessageFormState> {
   loading = false
 
   async componentDidMount() {

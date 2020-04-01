@@ -1,9 +1,9 @@
 import React from 'react';
-import { Basic } from './Form';
+import { MessageForm } from './components/MessageForm';
 
-const App: React.FC = (props) => {
+const App: React.FC = () => {
   return (
-    <Basic />
+    <MessageForm />
   )
 }
 

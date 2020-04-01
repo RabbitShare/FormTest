@@ -1,6 +1,6 @@
 import { Field, Form } from 'formik';
-import { Users } from './types/Users';
-import { Values } from './Form';
+import { Users } from '../types/Users';
+import { Values } from './MessageForm';
 import React from 'react';
 
 interface MessageProps {
